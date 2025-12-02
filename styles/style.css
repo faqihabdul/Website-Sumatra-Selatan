@@ -1,0 +1,184 @@
+/* variable warna */
+:root {
+--gold: #D4A437;
+--biru: #4B6E91;
+--coklat: #6A4E2A;
+--putih: #F4EFE3;
+--coklat_gelap: #5A3F23;
+}
+
+/* mereset semua padding, margin dan font */
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,body {
+    box-sizing: border-box;
+}
+
+/* style untuk header */
+header #container {
+    background-color: #6A4E2A;
+    top: 0px;
+    position: sticky;
+}
+
+.nav-flex {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav {
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+nav a {
+    display: inline-block;
+    margin: 0px 10px;
+    line-height: 60px;
+    text-decoration: none;
+    color: var(--gold);
+
+}
+
+/* hover untuk nav */
+nav a:hover {
+    background-color:var(--coklat_gelap);
+    transition: all 0.4;
+}
+
+.brand-name h2 {
+    line-height: 60px;
+    color: var(--putih);
+    margin: 0px 15px
+}
+
+/* Hero Image styles */
+.hero-container {
+    background-image: url(../assets/img/hero_img.jpeg);
+    height: 100vh; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text {
+    text-align: center;
+    color: var(--putih);
+    font-size: 20px;
+}
+
+.text a {
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--putih);
+    padding: 10px;
+    color: var(--coklat);
+    border-radius: 15px;
+    margin: 12px 0px;
+}
+
+/* hover untuk button */
+.text a:hover{
+    background-color: var(--coklat_gelap);
+    color: var(--putih);
+}
+
+/* bagian section Kuliner */
+#kuliner h1 {
+    margin: 25px 0px;
+    text-align: center;
+    color: darkgoldenrod;
+}
+
+/* card bagian kuliner */
+
+.my-card img {
+    height: 50%;
+    margin: 0px 15px;
+}
+
+.card:hover {
+    transform: translateY(-15);
+}
+
+/* section Budaya */
+#budaya h1 {
+    text-align: center;
+    margin: 20px 0px;
+    color: var(--coklat_gelap);
+}
+
+/* untuk video budaya / tari sanggai */
+.container-video h3{
+    text-align: center;
+    color: goldenrod;
+}
+
+.container-video video {
+    width: 900px;
+    margin-left: 175px;
+}
+
+.text-video {
+    text-align: justify;
+    margin: 10px 30px;
+}
+
+/* untuk card kain songket */
+
+#budaya h3 {
+    color: var(--gold);
+    text-align: center;
+    margin: 10px 0px;
+}
+.card-img {
+    margin: 10px 15px;
+    
+}
+
+.card-img img {
+    height: 300px;
+}
+
+/* section wisata */
+#wisata h1 {
+    color: rgb(207, 128, 72);
+    text-align: center;
+    margin:15px 0px;
+    margin-top: 30px;
+}
+
+#wisata img {
+    height: 300px;
+}
+
+#wisata {
+    margin-bottom: 30px;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: var(--coklat);
+}
+
+footer p {
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    color: var(--putih);
+    margin: 0px;
+}
